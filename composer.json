@@ -1,0 +1,11 @@
+{
+    "require": {
+        "doctrine/annotations": "1.*",
+        "doctrine/lexer": "1.*",
+        "symfony/finder": "6.*",
+        "symfony/polyfill-ctype": "1.*",
+        "symfony/yaml": "6.*",
+        "zircote/swagger-php": "3.*",
+        "friendsofphp/php-cs-fixer": "^2.17 || ^3.0"
+    }
+}

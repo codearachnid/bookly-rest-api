@@ -24,7 +24,7 @@
 *         required=true,
 *         description="The customer ID.",
 *         style="form",
-*         @OA\Schema(type="integer", @OA\Items(type="integer"))
+*         @OA\Schema(type="array", @OA\Items(type="integer"))
 *     ),
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),
@@ -45,7 +45,7 @@
 *         required=true,
 *         description="The customer Full Name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -53,7 +53,7 @@
 *         required=false,
 *         description="The customer Wordpress User ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -61,7 +61,7 @@
 *         required=false,
 *         description="The customer First Name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -69,7 +69,7 @@
 *         required=false,
 *         description="The customer Last Name",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -77,7 +77,7 @@
 *         required=false,
 *         description="The customer Phone Number.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -85,7 +85,7 @@
 *         required=false,
 *         description="The customer E-mail Address.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -93,7 +93,7 @@
 *         required=false,
 *         description="The customer Birthday.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -101,7 +101,7 @@
 *         required=false,
 *         description="The customer Country.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -109,7 +109,7 @@
 *         required=false,
 *         description="The customer State.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -117,7 +117,7 @@
 *         required=false,
 *         description="The customer Post Code.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -125,7 +125,7 @@
 *         required=false,
 *         description="The customer City name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -133,7 +133,7 @@
 *         required=false,
 *         description="The customer Street name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -141,7 +141,7 @@
 *         required=false,
 *         description="The customer Additional Address.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -149,7 +149,7 @@
 *         required=false,
 *         description="The customer Notes.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -157,7 +157,7 @@
 *         required=false,
 *         description="The customer Info Fields.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -165,7 +165,7 @@
 *         required=false,
 *         description="The customer Creation Date.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),
@@ -187,7 +187,7 @@
 *         required=true,
 *         description="The customer ID.",
 *         style="form",
-*         @OA\Schema(type="integer", @OA\Items(type="integer"))
+*         @OA\Schema(type="array", @OA\Items(type="integer"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -195,7 +195,7 @@
 *         required=true,
 *         description="The customer Full Name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -203,7 +203,7 @@
 *         required=false,
 *         description="The customer Wordpress User ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -211,7 +211,7 @@
 *         required=false,
 *         description="The customer First Name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -219,7 +219,7 @@
 *         required=false,
 *         description="The customer Last Name",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -227,7 +227,7 @@
 *         required=false,
 *         description="The customer Phone Number.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -235,7 +235,7 @@
 *         required=false,
 *         description="The customer E-mail Address.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -243,7 +243,7 @@
 *         required=false,
 *         description="The customer Birthday.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -251,7 +251,7 @@
 *         required=false,
 *         description="The customer Country.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -259,7 +259,7 @@
 *         required=false,
 *         description="The customer State.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -267,7 +267,7 @@
 *         required=false,
 *         description="The customer Post Code.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -275,7 +275,7 @@
 *         required=false,
 *         description="The customer City name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -283,7 +283,7 @@
 *         required=false,
 *         description="The customer Street name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -291,7 +291,7 @@
 *         required=false,
 *         description="The customer Additional Address.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -299,7 +299,7 @@
 *         required=false,
 *         description="The customer Notes.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -307,7 +307,7 @@
 *         required=false,
 *         description="The customer Info Fields.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -315,7 +315,7 @@
 *         required=false,
 *         description="The customer Creation Date.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),
@@ -337,7 +337,7 @@
 *         required=true,
 *         description="The customer ID.",
 *         style="form",
-*         @OA\Schema(type="integer", @OA\Items(type="integer"))
+*         @OA\Schema(type="array", @OA\Items(type="integer"))
 *     ),
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),

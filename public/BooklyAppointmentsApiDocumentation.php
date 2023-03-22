@@ -23,7 +23,7 @@
 *         required=false,
 *         description="The appointment Location ID.",
 *         style="form",
-*         @OA\Schema(type="integer", @OA\Items(type="integer"))
+*         @OA\Schema(type="array", @OA\Items(type="integer"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -31,7 +31,7 @@
 *         required=true,
 *         description="The appointment Staff ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -39,7 +39,7 @@
 *         required=false,
 *         description="",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -47,7 +47,7 @@
 *         required=false,
 *         description="The appointment Service ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -55,7 +55,7 @@
 *         required=false,
 *         description="The appointment Custom Service Name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -63,7 +63,7 @@
 *         required=false,
 *         description="The appointment Custom Service Price.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -71,7 +71,7 @@
 *         required=true,
 *         description="The appointment Start Date. Format: Y-m-d.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -79,7 +79,7 @@
 *         required=true,
 *         description="The appointment End Date. Format: Y-m-d",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -87,7 +87,7 @@
 *         required=false,
 *         description="The appointment Extras Duration.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -95,7 +95,7 @@
 *         required=false,
 *         description="The appointment Internal Note.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -103,7 +103,7 @@
 *         required=false,
 *         description="The appointment Google Event ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -111,7 +111,7 @@
 *         required=false,
 *         description="The appointment Google Event etag.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -119,7 +119,7 @@
 *         required=false,
 *         description="The appointment Outlook Event ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -127,7 +127,7 @@
 *         required=false,
 *         description="The appointment Outlook Event Change Key.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -135,7 +135,7 @@
 *         required=false,
 *         description="The appointment Outlook Event Series ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -143,7 +143,7 @@
 *         required=true,
 *         description="Indicates from which application the appointment was created.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -151,7 +151,7 @@
 *         required=false,
 *         description="The appointment Creation Date. Format: Y-m-d.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),
@@ -175,7 +175,7 @@
 *         required=true,
 *         description="The appointment ID.",
 *         style="form",
-*         @OA\Schema(type="integer", @OA\Items(type="integer"))
+*         @OA\Schema(type="array", @OA\Items(type="integer"))
 *     ),
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),
@@ -196,7 +196,7 @@
 *         required=true,
 *         description="The appointment ID.",
 *         style="form",
-*         @OA\Schema(type="integer", @OA\Items(type="integer"))
+*         @OA\Schema(type="array", @OA\Items(type="integer"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -204,7 +204,7 @@
 *         required=false,
 *         description="The appointment Location ID.",
 *         style="form",
-*         @OA\Schema(type="integer", @OA\Items(type="integer"))
+*         @OA\Schema(type="array", @OA\Items(type="integer"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -212,7 +212,7 @@
 *         required=true,
 *         description="The appointment Staff ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -220,7 +220,7 @@
 *         required=false,
 *         description="",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -228,7 +228,7 @@
 *         required=false,
 *         description="The appointment Service ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -236,7 +236,7 @@
 *         required=false,
 *         description="The appointment Custom Service Name.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -244,7 +244,7 @@
 *         required=false,
 *         description="The appointment Custom Service Price.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -252,7 +252,7 @@
 *         required=true,
 *         description="The appointment Start Date. Format: Y-m-d.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -260,7 +260,7 @@
 *         required=true,
 *         description="The appointment End Date. Format: Y-m-d",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -268,7 +268,7 @@
 *         required=false,
 *         description="The appointment Extras Duration.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -276,7 +276,7 @@
 *         required=false,
 *         description="The appointment Internal Note.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -284,7 +284,7 @@
 *         required=false,
 *         description="The appointment Google Event ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -292,7 +292,7 @@
 *         required=false,
 *         description="The appointment Google Event etag.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -300,7 +300,7 @@
 *         required=false,
 *         description="The appointment Outlook Event ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -308,7 +308,7 @@
 *         required=false,
 *         description="The appointment Outlook Event Change Key.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -316,7 +316,7 @@
 *         required=false,
 *         description="The appointment Outlook Event Series ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -324,7 +324,7 @@
 *         required=true,
 *         description="Indicates from which application the appointment was created.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -332,7 +332,7 @@
 *         required=false,
 *         description="The appointment creation date. Format: Y-m-d.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),
@@ -354,7 +354,7 @@
 *         required=true,
 *         description="The appointment ID.",
 *         style="form",
-*         @OA\Schema(type="integer", @OA\Items(type="integer"))
+*         @OA\Schema(type="array", @OA\Items(type="integer"))
 *     ),
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),
@@ -377,7 +377,7 @@
 *         required=true,
 *         description="Date from which you want to look for availability. Format: Y-m-d",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -385,7 +385,7 @@
 *         required=true,
 *         description="Days of the week in which you want to find availability. Options: [1,2,3,4,5,6,7]",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -393,7 +393,7 @@
 *         required=true,
 *         description="Time from which you want to look for availability. Format: 24h format (10:00)",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -401,7 +401,7 @@
 *         required=true,
 *         description="Time to which you want to look for availability. Format: 24h format (10:00)",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -409,7 +409,7 @@
 *         required=true,
 *         description="The appointment Service ID.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -417,7 +417,7 @@
 *         required=true,
 *         description="A list of staff IDs, separated by commas. For instance: 1,33,44.",
 *         style="form",
-*         @OA\Schema(type="string", @OA\Items(type="string"))
+*         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),*
 *     @OA\Response(response=200, description="success"),
 *     @OA\Response(response=404, description="not found"),

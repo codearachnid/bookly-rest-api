@@ -10,7 +10,7 @@
      *         required=false,
      *         description="The service ID",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Response(response=200, description="success"),
      *     @OA\Response(response=404, description="not found"),
@@ -31,7 +31,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -39,7 +39,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -47,7 +47,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -55,7 +55,7 @@
      *         required=true,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -63,7 +63,7 @@
      *         required=true,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -71,7 +71,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -79,7 +79,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -87,7 +87,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -95,7 +95,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -103,7 +103,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -111,7 +111,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -119,7 +119,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Response(response=200, description="success"),
      *     @OA\Response(response=404, description="not found"),
@@ -143,7 +143,7 @@
      *         required=true,
      *         description="The staff ID.",
      *         style="form",
-     *         @OA\Schema(type="integer", @OA\Items(type="integer"))
+     *         @OA\Schema(type="array", @OA\Items(type="integer"))
      *     ),
      *     @OA\Response(response=200, description="success"),
      *     @OA\Response(response=404, description="not found"),
@@ -164,7 +164,7 @@
      *         required=true,
      *         description="The staff ID.",
      *         style="form",
-     *         @OA\Schema(type="integer", @OA\Items(type="integer"))
+     *         @OA\Schema(type="array", @OA\Items(type="integer"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -172,7 +172,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -180,7 +180,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -188,7 +188,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -196,7 +196,7 @@
      *         required=true,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -204,7 +204,7 @@
      *         required=true,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -212,7 +212,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -220,7 +220,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -228,7 +228,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -236,7 +236,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -244,7 +244,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -252,7 +252,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Parameter(
      *         in="query",
@@ -260,7 +260,7 @@
      *         required=false,
      *         description="",
      *         style="form",
-     *         @OA\Schema(type="string", @OA\Items(type="string"))
+     *         @OA\Schema(type="array", @OA\Items(type="string"))
      *     ),
      *     @OA\Response(response=200, description="success"),
      *     @OA\Response(response=404, description="not found"),
@@ -282,7 +282,7 @@
      *         required=true,
      *         description="The staff ID.",
      *         style="form",
-     *         @OA\Schema(type="integer", @OA\Items(type="integer"))
+     *         @OA\Schema(type="array", @OA\Items(type="integer"))
      *     ),
      *     @OA\Response(response=200, description="success"),
      *     @OA\Response(response=404, description="not found"),
