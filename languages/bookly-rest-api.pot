@@ -1,0 +1,59 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-07-12 13:53+0200\n"
+"PO-Revision-Date: 2019-07-12 13:09+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_attr__;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: admin/swagger\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Poedit-SearchPathExcluded-2: tests\n"
+
+#: bookly-rest-api.php:71
+msgid "Settings"
+msgstr ""
+
+#: includes/bookly-rest-api-bookly.php:80
+msgid "here"
+msgstr ""
+
+#: includes/bookly-rest-api-bookly.php:83
+#, php-format
+msgid ""
+"Bookly REST API requires plugin %1$s version %2$s+ or newer installed "
+"and activated in order to work. You can buy the plugin at CodeCanyon "
+"clicking %3$s."
+msgstr ""
+
+#: includes/bookly-rest-api-bookly.php:93
+#, php-format
+msgid ""
+"Bookly REST API requires plugin Bookly version %1$s+ or newer installed "
+"and activated in order to work. You can buy the plugin at CodeCanyon."
+msgstr ""
+
+#: includes/bookly-rest-api-settings.php:22
+msgid "Setup your Bookly REST API instance."
+msgstr ""
+
+#: includes/bookly-rest-api-settings.php:32
+msgid "Envato Purchase Code"
+msgstr ""
+
+#: public/BooklyRestApi.php:151
+msgid "Purchase and validate Bookly REST API"
+msgstr ""
+
+#: public/BooklyRestApi.php:160
+msgid "You do not have permissions to do this operation."
+msgstr ""

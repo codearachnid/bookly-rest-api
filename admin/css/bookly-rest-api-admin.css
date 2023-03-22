@@ -1,0 +1,28 @@
+/* Add styles that only apply to the admin backend page. */
+section .topbar {
+    display: none;
+}
+
+h2.title {
+    line-height: 36px;
+}
+
+h2 span small {
+    line-height: 14px;
+}
+
+.swagger-ui .wrapper {
+    max-width: none !important;
+}
+
+.auth-btn-wrapper button.button {
+    padding-top: 0;
+}
+
+.main a span.url {
+    display: none;
+}
+
+.swagger-ui table td, table th {
+    border: none !important;
+}
