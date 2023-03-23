@@ -306,8 +306,8 @@ class BooklyAppointments
             $pd_details = serialize($params['payment_details']['details']);
         }
 
-        if (isset($params['payment_details']['created']) && !empty($params['payment_details']['created'])) {
-            $pd_created = sanitize_text_field($params['payment_details']['created']);
+        if (isset($params['payment_details']['created_at']) && !empty($params['payment_details']['created_at'])) {
+            $pd_created = sanitize_text_field($params['payment_details']['created_at']);
         }
 
         $wpdb->insert(
