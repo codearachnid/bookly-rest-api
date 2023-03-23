@@ -168,6 +168,31 @@
 *         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
 * @OA\Parameter(
+*     name="payment_details",
+*     in="query",
+*     description="Appointment payment details",
+*     required=true,
+*     @OA\Schema(
+*             type="object",
+*             @OA\Property(property="coupon_id", type="integer", example=0),
+*             @OA\Property(property="gift_card_id", type="integer", example=0),
+*             @OA\Property(property="target", type="string", enum={"appointments","packages"}),
+*             @OA\Property(property="type", type="string", enum={"local","free","paypal","authorize_net","stripe","2checkout","payu_biz","payu_latam","payson","mollie","woocommerce","cloud_stripe","cloud_square","cloud_gift"}, example="local"),
+*             @OA\Property(property="total", type="string", example=""),
+*             @OA\Property(property="tax", type="string", example=""),
+*             @OA\Property(property="paid", type="string", example=""),
+*             @OA\Property(property="paid_type", type="string", enum={"in_full","deposit"}),
+*             @OA\Property(property="gateway_price_correction", type="string", example=""),
+*             @OA\Property(property="status", type="integer", enum={"pending","completed","rejected","refunded"}),
+*             @OA\Property(property="token", type="string", example=""),
+*             @OA\Property(property="details", type="string", example=""),
+*             @OA\Property(property="ref_id", type="string", example=""),
+*             @OA\Property(property="created_at", type="string", format="date-time", example="Y-m-d H:i:s"),
+*             @OA\Property(property="updated_at", type="string", format="date-time", example="Y-m-d H:i:s")
+*     ),
+*     style="deepObject"
+* ),
+* @OA\Parameter(
 *     in="query",
 *     name="created_from",
 *     required=true,
