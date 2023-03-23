@@ -31,7 +31,7 @@
 *         required=true,
 *         description="The appointment Staff ID.",
 *         style="form",
-*         @OA\Schema(type="array", @OA\Items(type="string"))
+*         @OA\Schema(type="integer", example=1)
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -44,10 +44,10 @@
 *     @OA\Parameter(
 *         in="query",
 *         name="service_id",
-*         required=false,
+*         required=true,
 *         description="The appointment Service ID.",
 *         style="form",
-*         @OA\Schema(type="array", @OA\Items(type="string"))
+*         @OA\Schema(type="integer", example=1)
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -65,13 +65,43 @@
 *         style="form",
 *         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
+* @OA\Parameter(
+*     name="customer_appointment",
+*     in="query",
+*     description="Customer appointment details",
+*     required=true,
+*     @OA\Schema(
+*             type="object",
+*             @OA\Property(property="package_id", type="integer", example=0),
+*             @OA\Property(property="customer_id", type="integer", example=1, required={"true"}),
+*             @OA\Property(property="number_of_persons", type="integer", example=1),
+*             @OA\Property(property="units", type="integer", example=1),
+*             @OA\Property(property="status", type="string", example=""),
+*             @OA\Property(property="notes", type="string", example=""),
+*             @OA\Property(property="extras", type="string", example=""),
+*             @OA\Property(property="extras_multiply_nop", type="integer", example=1),
+*             @OA\Property(property="status_changed_at", type="string", format="date-time", example="Y-m-d H:i:s"),
+*             @OA\Property(property="token", type="string", example=""),
+*             @OA\Property(property="time_zone", type="string", example=""),
+*             @OA\Property(property="time_zone_offset", type="string", example=""),
+*             @OA\Property(property="rating", type="integer", example=0),
+*             @OA\Property(property="rating_comment", type="string", example=""),
+*             @OA\Property(property="locale", type="string", example=""),
+*             @OA\Property(property="compound_service_id", type="integer", example=0),
+*             @OA\Property(property="compound_token", type="string", example=""),
+*             @OA\Property(property="created_from", type="string", example=""),
+*             @OA\Property(property="created_at", type="string", format="date-time", example="Y-m-d H:i:s"),
+*             @OA\Property(property="custom_fields", type="string", example="")
+*     ),
+*     style="deepObject"
+* ),
 *     @OA\Parameter(
 *         in="query",
 *         name="start_date",
 *         required=true,
 *         description="The appointment Start Date. Format: Y-m-d.",
 *         style="form",
-*         @OA\Schema(type="array", @OA\Items(type="string"))
+*         @OA\Schema(type="string", format="date-time", example="2023-03-22T20:00:00Z")
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -79,7 +109,7 @@
 *         required=true,
 *         description="The appointment End Date. Format: Y-m-d",
 *         style="form",
-*         @OA\Schema(type="array", @OA\Items(type="string"))
+*         @OA\Schema(type="string", format="date-time", example="2023-03-22T20:15:00Z")
 *     ),
 *     @OA\Parameter(
 *         in="query",
@@ -137,17 +167,25 @@
 *         style="form",
 *         @OA\Schema(type="array", @OA\Items(type="string"))
 *     ),
+* @OA\Parameter(
+*     in="query",
+*     name="created_from",
+*     required=true,
+*     description="Indicates from which application the appointment was created.",
+*     style="form",
+*     @OA\Schema(
+*         type="array",
+*         @OA\Items(
+*             type="string",
+*             enum={"bookly","google","outlook","api"},
+*             example="api"
+*         ),
+*         default="api"
+*     )
+* ),
 *     @OA\Parameter(
 *         in="query",
-*         name="created_from",
-*         required=true,
-*         description="Indicates from which application the appointment was created.",
-*         style="form",
-*         @OA\Schema(type="array", @OA\Items(type="string"))
-*     ),
-*     @OA\Parameter(
-*         in="query",
-*         name="created",
+*         name="created_at",
 *         required=false,
 *         description="The appointment Creation Date. Format: Y-m-d.",
 *         style="form",
@@ -236,7 +274,7 @@
 *         required=false,
 *         description="The appointment Custom Service Name.",
 *         style="form",
-*         @OA\Schema(type="array", @OA\Items(type="string"))
+*         @OA\Schema(type="string")
 *     ),
 *     @OA\Parameter(
 *         in="query",
