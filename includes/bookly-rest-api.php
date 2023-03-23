@@ -77,7 +77,7 @@ class Bookly_Rest_Api
         $tableprefix = $wpdb->prefix.'bookly_';
 
         $this->plugin_name                 = 'bookly-api';
-        $this->api_namespace               = 'wp/v2/';
+        $this->api_namespace               = 'wp/v2';
         $this->restbase                    = 'bookly';
 
         $this->staff_slug                  = 'staff';
