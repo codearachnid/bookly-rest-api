@@ -262,8 +262,8 @@ class BooklyAppointments
             $ca_created_from = sanitize_text_field($params['customer_appointment']['created_from']);
         }
 
-        if (isset($params['customer_appointment']['created']) && !empty($params['customer_appointment']['created'])) {
-            $ca_created = sanitize_text_field($params['customer_appointment']['created']);
+        if (isset($params['customer_appointment']['created']) && !empty($params['customer_appointment']['created_at'])) {
+            $ca_created = sanitize_text_field($params['customer_appointment']['created_at']);
         }
 
         if (isset($params['customer_appointment']['custom_fields']) && !empty($params['customer_appointment']['custom_fields'])) {
@@ -361,7 +361,7 @@ class BooklyAppointments
                     'gateway_price_correction' => $pd_gateway_price_correction,
                     'status'                   => $pd_status,
                     'details'                  => "$pd_details",
-                    'created'                  => "$pd_created"
+                    'created_at'                  => "$pd_created"
                 ],
                 [
                     '%d',
@@ -405,7 +405,7 @@ class BooklyAppointments
                         'compound_service_id' => "$ca_compound_service_id",
                         'compound_token'      => "$ca_compound_token",
                         'created_from'        => "$ca_created_from",
-                        'created'             => "$ca_created",
+                        'created_at'             => "$ca_created",
                     ],
                     [
                         '%d',
