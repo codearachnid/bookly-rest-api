@@ -171,7 +171,7 @@
 *     name="payment_details",
 *     in="query",
 *     description="Appointment payment details",
-*     required=true,
+*     required=false,
 *     @OA\Schema(
 *             type="object",
 *             @OA\Property(property="coupon_id", type="integer", example=0),

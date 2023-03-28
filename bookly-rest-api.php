@@ -1,13 +1,13 @@
 <?php
 /**
- * @link              https://pdg.solutions
+ * @link              
  * @since             1.0.0
  * @package           bookly_api_crud_operations
  * Plugin Name:       Bookly REST API
- * Plugin URI:        https://pdg.solutions/portfolio/bookly-rest-api
+ * Plugin URI:        
  * Description:       Enable a REST API for your Bookly Plugin to performe CRUD operations on Appointments, Staff, Services and Customers.
- * Version:           1.1.2
- * Author:            PDG Solutions
+ * Version:           1.0.0
+ * Author:            Timothy Wood @codearachnid
  * Author URI:        https://pdg.solutions
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
